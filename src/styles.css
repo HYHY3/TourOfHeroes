@@ -3,20 +3,27 @@ h1 {
     color: #369;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 250%;
-  }
-  h2, h3 {
+}
+
+h2,
+h3 {
     color: #444;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
-  }
-  body {
+}
+
+body {
     margin: 2em;
-  }
-  body, input[type="text"], button {
+}
+
+body,
+input[type="text"],
+button {
     color: #333;
     font-family: Cambria, Georgia, serif;
-  }
-  button {
+}
+
+button {
     background-color: #eee;
     border: none;
     border-radius: 4px;
@@ -27,18 +34,20 @@ h1 {
     margin-right: 1rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
-  }
-  button:hover {
+}
+
+button:hover {
     background-color: black;
     color: white;
-  }
-  button:disabled {
+}
+
+button:disabled {
     background-color: #eee;
     color: #aaa;
     cursor: auto;
-  }
-  
-  /* everywhere else */
-  * {
+}
+
+/* everywhere else */
+* {
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
