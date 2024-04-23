@@ -9,15 +9,9 @@ import { HeroServiceService } from '../hero-service.service';
 })
 export class HeroesComponent implements OnInit {
   allHeroes: Hero[] = [];
-  selectedHero: Hero | undefined;
 
   constructor(private heroConfig: HeroServiceService) {
 
-  }
-
-  onSelecteHero(heroValue: Hero) {
-    this.selectedHero = heroValue;
-    //window.alert("an hero has been selected");
   }
 
   getMyHeroes() {
