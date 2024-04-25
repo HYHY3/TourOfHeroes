@@ -29,7 +29,14 @@ export class HeroDetailsComponent {
       .subscribe(heroTemp => this.currentHero = heroTemp);
   }
 
-  goBack(): void {
+  onGoBack(): void {
     this.location.back();
+  }
+
+  onSave(): void {
+    if (this.currentHero) {
+      this.heroService.updateHero(this.currentHero)
+        .subscribe(() => this.onGoBack());
+    }
   }
 }

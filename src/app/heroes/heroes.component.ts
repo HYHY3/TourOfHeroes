@@ -22,4 +22,17 @@ export class HeroesComponent implements OnInit {
     this.getMyHeroes();
   }
 
+  onAddHero(name: string): void {
+    name = name.trim();
+    if (!name) {
+      return;
+    }
+    this.heroConfig.addHero(
+      { name } as Hero
+    ).subscribe(
+      hero => {
+        this.allHeroes.push(hero);
+      }
+    );
+  }
 }
